@@ -4,7 +4,9 @@
     --accent: rgb(80.4%, 19.7%, 30%);
     font-family: "Verdana", Sans-serif;
 }
-
+html, body {
+    min-width: 350px;
+}
 body {
     margin: 0;
     text-align: center;
