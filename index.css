@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
 :root {
     --light: #eee;
     --dark: #222;
     --accent: rgb(80.4%, 19.7%, 30%);
-    font-family: "Verdana", Sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 html, body {
     min-width: 350px;

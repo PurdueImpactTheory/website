@@ -7,7 +7,17 @@ export default function(props) {
         <Container>
             <MastHead>
                 <Logo/>
-                <Mission/>
+                <Mission>
+                    <p>
+                        Quisque id mauris volutpat, porta elit vitae porttitor commodo. Suspendisse et suscipit metus, id eleifend orci. 
+                    </p>
+                    <p>
+                        Fusce ac porttitor turpis, gravida cursus mauris. Ut ac nibh ut metus pellentesque maximus nec ac felis. 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    </p>
+                </Mission>
             </MastHead> 
             <Video/>
         </Container>
@@ -25,7 +35,7 @@ const Container = styled.div`
 const MastHead = styled.div`
     display: grid;
     grid-template-columns: auto 90vw auto;
-    grid-template-rows: 200px 300px;
+    grid-template-rows: 200px auto;
     align-items: center;
     justify-content: center;
 
@@ -60,8 +70,7 @@ const Logo = styled.div`
 `;
 
 const Mission = styled.div`
-    background: #777;
-    
+    color: var(--light);
     justify-self: center;
     align-self: center;
 
@@ -83,6 +92,19 @@ const Mission = styled.div`
         justify-self: stretch;
         align-self: stretch;
     `}
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 10px;
+
+    >p {
+        margin: 10px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+    }
 `;
 
 const Video = styled.div`    
