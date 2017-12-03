@@ -1,0 +1,12 @@
+:root {
+    --light: #eee;
+    --dark: #222;
+    --accent: rgb(80.4%, 19.7%, 30%);
+    font-family: "Verdana", Sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: var(--dark);
+}
