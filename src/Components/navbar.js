@@ -56,7 +56,9 @@ const Name = styled.h3`
 const Nav = styled.div`
     grid-column-start: 3;
     grid-column-end: 4;
+
     background: var(--accent);
+    border-radius: 3px 0 0 3px;
 
     flex-direction: row;
     justify-content: space-around;
@@ -80,7 +82,10 @@ const Nav = styled.div`
 const Hamburger = styled.div`
     grid-column-start: 3;
     grid-column-end: 4;
+
     background: var(--accent);
+    border-radius: 3px;
+
     ${_.media.minTablet`
         display: none;
     `}
