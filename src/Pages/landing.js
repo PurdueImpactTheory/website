@@ -116,12 +116,11 @@ const Video = styled.div`
     
     width: 90vw;
     height: 50vw;
+    max-width: 90vw;
+    max-height: 80vh;
     margin: 25px auto 50px;
 
     ${_.media.minTablet`
-        width: 700px;
-        height: 400px;
         margin: 25px auto 100px;
-        align-self: stretch;
     `}
 `;
