@@ -25,7 +25,9 @@ export default function(props) {
 }
 
 const Container = styled.div`
-    min-height: 90vh;
+    background-image: url(black_lozenge/black_lozenge.png);
+    background-repeat: repeat;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;

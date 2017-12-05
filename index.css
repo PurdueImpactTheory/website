@@ -3,7 +3,7 @@
 :root {
     --light: #eee;
     --dark: #222;
-    --accent: rgb(80.4%, 19.7%, 30%);
+    --accent: rgb(80%, 70%, 6.8%);
     font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
