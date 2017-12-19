@@ -4,21 +4,11 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@phenomic/cli": "^1.0.0-alpha.13",
-    "@phenomic/core": "^1.0.0-alpha.13",
-    "@phenomic/preset-react-app": "^1.0.0-alpha.13",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router": "^3.2.0",
-    "styled-components": "^2.2.4"
+    "less": "^2.7.3",
+    "less-watch-compile": "^1.1.8",
+    "less-watch-compiler": "^1.10.0"
   },
   "scripts": {
-    "start": "phenomic start",
-    "build": "phenomic build"
-  },
-  "phenomic": {
-    "presets": [
-      "@phenomic/preset-react-app"
-    ]
+    "watch-less": "less-watch-compiler"
   }
 }
