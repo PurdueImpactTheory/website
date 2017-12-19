@@ -5,14 +5,13 @@ import _        from '../helpers.js';
 export default function(props) {
     return (
         <Container>
-            <Name>The Pit</Name>
+            <Logo><img src="logo.png"/></Logo>
             <Nav>
                 <h3>Home</h3>
                 <h3>About</h3>
                 <h3>Team</h3>
                 <h3>Contact Us</h3>
             </Nav>
-            <Hamburger/>
             <Drawer>
                 <h3>Home</h3>
                 <h3>About</h3>
@@ -37,57 +36,50 @@ const Container = styled.div`
     ${_.media.minTablet`
         grid-template-columns:  200px auto ${sizeOfEachTab * numberOfTabs}px ;
     `}
+    min-width: var(--min-screen-width);
 `;
 
-const Name = styled.h3`
-    padding: 0;
-    margin: 0;
-    
-    color: var(--light);
-
+const Logo = styled.div`
     grid-column-start: 1;
     grid-column-end: 2;
+    text-align: left;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    >img {
+        height: 100%;
+        margin-left: 20%;
+    }
 `;
 
 const Nav = styled.div`
-    grid-column-start: 3;
-    grid-column-end: 4;
 
-    background: var(--accent);
-    border-radius: 3px 0 0 3px;
-
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    >h3 {
-        color: var(--dark);
-        margin: 0;
-        padding: 0;
-        align-self: center;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    display: none;
-    ${_.media.minTablet`
-        display: flex;;
-    `}
-`;
-
-const Hamburger = styled.div`
     grid-column-start: 3;
     grid-column-end: 4;
 
     background: var(--accent);
     border-radius: 3px;
 
-    ${_.media.minTablet`
+    >h3 {
         display: none;
+    }
+
+    ${_.media.minTablet`
+        display: flex;
+    
+        border-radius: 3px 0 0 3px;
+    
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+        >h3 {
+            display: inline-block;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
     `}
 `;
 

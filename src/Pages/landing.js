@@ -32,6 +32,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    min-width: var(--min-screen-width);
 `;
 
 const MastHead = styled.div`
@@ -53,8 +55,9 @@ const MastHead = styled.div`
 `;
 
 const Logo = styled.div`
-    background: #333;
-
+    background-image: url(logo.png);
+    background-size: cover;
+    
     width: 200px;
     height: 200px;
 

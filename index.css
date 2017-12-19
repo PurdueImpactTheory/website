@@ -4,13 +4,14 @@
     --light: #eee;
     --dark: #222;
     --accent: rgb(80%, 70%, 6.8%);
+    --min-screen-width: 350px;
     font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 html, body {
-    min-width: 350px;
+    min-width: var(--min-screen-width);
 }
 body {
     margin: 0;
