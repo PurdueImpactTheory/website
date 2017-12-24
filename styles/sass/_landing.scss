@@ -9,10 +9,10 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-width: @min-screen-width;
+    min-width: $min-screen-width;
 
     padding-top: 50px;
-    @media @tablet {
+    @media #{$tablet} {
         padding-top: 100px;
     }
 }
@@ -24,7 +24,7 @@ main {
     align-items: center;
 
     margin: 5vh auto 10vh;
-    @media @tablet {
+    @media #{$tablet} {
         margin: 15vh auto 25vh;
     }
 }
@@ -38,7 +38,7 @@ main {
     justify-content: center;
     align-self: center;
 
-    @media @tablet {
+    @media #{$tablet} {
         grid-template-columns: auto 300px 600px auto;
         grid-template-rows: 300px;
         grid-gap: 40px;
@@ -60,7 +60,7 @@ main {
 
     justify-self: center;
 
-    @media @tablet {
+    @media #{$tablet} {
         width: 300px;
         height: 300px;
 
@@ -71,7 +71,7 @@ main {
 }
 
 .blurb {
-    color: @light-color;
+    color: $light-color;
 
     justify-self: center;
     align-self: center;
@@ -89,7 +89,7 @@ main {
 
     text-align: center;
 
-    @media @tablet {
+    @media #{$tablet} {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -111,7 +111,7 @@ main {
     font-family: 'Roboto', sans-serif;
 
     font-size: 1.3rem;
-    @media @tablet {
+    @media #{$tablet} {
         font-size: 1.8rem;
     }
 }
@@ -125,7 +125,7 @@ main {
     font-size: 1rem;
     line-height: 1.5rem;
 
-    @media @tablet {
+    @media #{$tablet} {
         font-size: 1.3rem;
         line-height: 1.95rem;
         text-align: justify;
@@ -133,11 +133,11 @@ main {
 }
 
 .blurb-org-name {
-    color: @gold-color;
+    color: $gold-color;
 }
 
 .video-wrapper {
-    background: @light-color;
+    background: $light-color;
     align-self: center;
     
     width: 90vw;
@@ -146,7 +146,7 @@ main {
     max-height: 80vh;
     margin: 0 auto 25px;
 
-    @media @tablet {
+    @media #{$tablet} {
         margin: 25px auto 100px;
     }
 

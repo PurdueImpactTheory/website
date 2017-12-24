@@ -2,13 +2,16 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
   "devDependencies": {
     "less": "^2.7.3",
     "less-watch-compile": "^1.1.8",
     "less-watch-compiler": "^1.10.0"
   },
   "scripts": {
-    "watch-less": "less-watch-compiler"
+    "watch-less": "less-watch-compiler",
+    "sass": "node-sass styles/sass/main.scss styles/css/main.css -w --source-map true"
   }
 }
