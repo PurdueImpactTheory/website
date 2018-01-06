@@ -23,3 +23,17 @@ body {
     text-align: center;
     background: $dark-color;
 }
+
+.link {
+    color: $gold-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    &:active {
+        font-weight: 500;
+    }
+}

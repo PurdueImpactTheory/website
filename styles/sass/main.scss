@@ -1,12 +1,12 @@
 // variables
-@import "_var.less";
+@import "_var.scss";
 
 // Global CSS
-@import "_global.less";
+@import "_global.scss";
 
 //Pages
-@import "_landing.less";
-@import "_navbar.less";
+@import "_landing.scss";
+@import "_navbar.scss";
 
 :root, html, body {
     width: 100vw;
