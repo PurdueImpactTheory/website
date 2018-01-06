@@ -1,77 +1,73 @@
-.nav-bar-container {
+.nav {
     position: fixed;
     padding-top: 10px;
     width: 100vw;
     display: grid;
     grid-template-columns:  200px auto 40px 40px;
     grid-template-rows: 40px;
-
-
-    @media #{$tablet} {
-        grid-template-columns:  200px auto 450px;
-    }
-
     min-width: $min-screen-width;
 
     z-index: 10;
-}
 
-.nav-logo-container {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: left;
-    z-index: 2;
-}
+    &-logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: left;
+        z-index: 2;
 
-.nav-logo {
-    height: 100%;
-    margin-left: 20%;
-}
-
-.nav-bar {
-    display: none;
-
-    @media #{$tablet} {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        grid-column-start: 3;
-        grid-column-end: 4;
-
-        background: $gold-color;
-        border-radius: 3px 0 0 3px;
-    }
-}
-
-.nav-item {
-    display: none;
-
-    text-decoration: none;
-
-    @media #{$tablet} {
-        display: inline-block;
-        color: #555;
-        margin: 0;
-        padding: 0;
-        align-self: center;
-        font-size: 1.1rem;
-        font-weight: 500;
-
-        &:hover, &:active {
-            color: $accent-color;       
-        }
-        &:focus {
-            text-decoration: underline;
+        &-img {
+            height: 100%;
+            margin-left: 20%;
         }
     }
-}
 
-.nav-item-active {
+    &-bar {
+        display: none;
+
+        &-item {
+            text-decoration: none;
+        
+            display: inline-block;
+            color: $dark-color;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+    
+            &:hover, &:focus {
+                color: $accent-color; 
+                transition: all 0.2s ease-in;      
+            }
+            &:active {
+                color: $accent-color; 
+                text-decoration: underline;
+                transition: all 0.2s ease-in; 
+            }
+
+            &-active {
+                text-decoration: underline;
+            }
+        }
+    }
+
     @media #{$tablet} {
-        color: #222;
+        grid-template-columns:  200px auto 450px;
+
+        &-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    
+            grid-column-start: 3;
+            grid-column-end: 4;
+    
+            background: $gold-color;
+            border-radius: 3px 0 0 3px;
+        }
     }
 }
+
 
 .m-nav-hamburger {
     z-index: 2;

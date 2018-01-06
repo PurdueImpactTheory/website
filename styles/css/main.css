@@ -180,7 +180,7 @@ main {
     width: 100%;
     height: 100%; }
 
-.nav-bar-container {
+.nav {
   position: fixed;
   padding-top: 10px;
   width: 100vw;
@@ -189,52 +189,45 @@ main {
   grid-template-rows: 40px;
   min-width: 300px;
   z-index: 10; }
-  @media only screen and (min-width: 940px) {
-    .nav-bar-container {
-      grid-template-columns: 200px auto 450px; } }
-
-.nav-logo-container {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  text-align: left;
-  z-index: 2; }
-
-.nav-logo {
-  height: 100%;
-  margin-left: 20%; }
-
-.nav-bar {
-  display: none; }
-  @media only screen and (min-width: 940px) {
-    .nav-bar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      background: #ccb311;
-      border-radius: 3px 0 0 3px; } }
-
-.nav-item {
-  display: none;
-  text-decoration: none; }
-  @media only screen and (min-width: 940px) {
-    .nav-item {
+  .nav-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    z-index: 2; }
+    .nav-logo-img {
+      height: 100%;
+      margin-left: 20%; }
+  .nav-bar {
+    display: none; }
+    .nav-bar-item {
+      text-decoration: none;
       display: inline-block;
-      color: #555;
+      color: #222;
       margin: 0;
       padding: 0;
       align-self: center;
       font-size: 1.1rem;
       font-weight: 500; }
-      .nav-item:hover, .nav-item:active {
-        color: #ca3434; }
-      .nav-item:focus {
-        text-decoration: underline; } }
-
-@media only screen and (min-width: 940px) {
-  .nav-item-active {
-    color: #222; } }
+      .nav-bar-item:hover, .nav-bar-item:focus {
+        color: #ca3434;
+        transition: all 0.2s ease-in; }
+      .nav-bar-item:active {
+        color: #ca3434;
+        text-decoration: underline;
+        transition: all 0.2s ease-in; }
+      .nav-bar-item-active {
+        text-decoration: underline; }
+  @media only screen and (min-width: 940px) {
+    .nav {
+      grid-template-columns: 200px auto 450px; }
+      .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background: #ccb311;
+        border-radius: 3px 0 0 3px; } }
 
 .m-nav-hamburger {
   z-index: 2;
