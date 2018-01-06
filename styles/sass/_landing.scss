@@ -17,32 +17,33 @@ main {
     }
 }
 
-.masthead-wrapper {
+.masthead {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin: 5vh auto 10vh;
+
+    &-body {
+        display: grid;
+        grid-template-columns: auto 80vw auto;
+        grid-template-rows: 200px auto;
+    
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
     @media #{$tablet} {
         margin: 10vh auto 10vh;
-    }
-}
 
-.masthead {
-    display: grid;
-    grid-template-columns: auto 80vw auto;
-    grid-template-rows: 200px auto;
-
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-
-    @media #{$tablet} {
-        grid-template-columns: auto 300px 600px auto;
-        grid-template-rows: 300px;
-        grid-gap: 40px;
-        align-self: center;
+        &-body {
+            grid-template-columns: auto 300px 600px auto;
+            grid-template-rows: 300px;
+            grid-gap: 40px;
+            align-self: center;
+        }
     }
 }
 

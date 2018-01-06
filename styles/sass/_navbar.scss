@@ -1,6 +1,6 @@
 .nav-bar-container {
     position: fixed;
-    margin-top: 10px;
+    padding-top: 10px;
     width: 100vw;
     display: grid;
     grid-template-columns:  200px auto 40px 40px;
@@ -20,6 +20,7 @@
     grid-column-start: 1;
     grid-column-end: 2;
     text-align: left;
+    z-index: 2;
 }
 
 .nav-logo {
@@ -28,18 +29,18 @@
 }
 
 .nav-bar {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background: $gold-color;
-    border-radius: 3px;
+    display: none;
 
     @media #{$tablet} {
         display: flex;
-    
-        border-radius: 3px 0 0 3px;
-    
         flex-direction: row;
         justify-content: space-around;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        background: $gold-color;
+        border-radius: 3px 0 0 3px;
     }
 }
 
@@ -58,7 +59,7 @@
         font-weight: 500;
 
         &:hover, &:active {
-            color: hsla(0, 59.1%, 49.8%, 100%);       
+            color: $accent-color;       
         }
         &:focus {
             text-decoration: underline;
@@ -70,4 +71,85 @@
     @media #{$tablet} {
         color: #222;
     }
+}
+
+.m-nav-hamburger {
+    z-index: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: $light-color;
+    border-radius: 3px;
+    
+    font-size: 2rem;
+
+    &:before {
+        content:'\2261'; 
+    }
+
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:active {
+        background: $gold-color;
+        transition: all 0.3s ease-out;
+    }
+    &:active {
+        color: $light-color;
+    }
+
+    @media #{$tablet} {
+        display: none;
+    }
+}
+
+.m-nav {
+    z-index: 1;
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding-top: 40px;
+
+    height: 100vh;
+    background: $gold-color;
+    opacity: 0.95;
+
+    &-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+
+        &-item {
+            display: block;
+            padding: 20px 0;
+            text-decoration: none;
+            color: $dark-color;
+            font-size: 2rem;
+
+            &:hover, &:focus {
+                text-decoration: underline;
+                color: $light-color;
+                transition: all 0.2s ease-in;
+            }
+
+            &:active {
+                color: $accent-color;
+            }
+
+            &-active {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+.m-nav-active { 
+    display: block;
 }
