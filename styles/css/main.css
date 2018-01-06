@@ -21,16 +21,7 @@ body {
   background: #222;
   overflow-x: hidden; }
 
-.link {
-  color: #ccb311;
-  text-decoration: none; }
-  .link:hover, .link:focus {
-    text-decoration: underline;
-    font-weight: 700; }
-  .link:active {
-    font-weight: 500; }
-
-main {
+.main {
   background-image: url(../../images/black_lozenge.png);
   background-repeat: repeat;
   margin: 0;
@@ -42,9 +33,15 @@ main {
   flex-direction: column;
   min-width: 300px;
   padding-top: 50px; }
-  @media only screen and (min-width: 940px) {
-    main {
-      padding-top: 100px; } }
+
+.link {
+  color: #ccb311;
+  text-decoration: none; }
+  .link:hover, .link:focus {
+    text-decoration: underline;
+    font-weight: 700; }
+  .link:active {
+    font-weight: 500; }
 
 .masthead {
   width: 100vw;
@@ -182,13 +179,13 @@ main {
 
 .nav {
   position: fixed;
-  padding-top: 10px;
   width: 100vw;
   display: grid;
   grid-template-columns: 200px auto 40px 40px;
-  grid-template-rows: 40px;
+  grid-template-rows: calc(50px - 10px);
+  padding-top: 10px;
   min-width: 300px;
-  z-index: 10; }
+  z-index: 1; }
   .nav-logo {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -229,27 +226,6 @@ main {
         background: #ccb311;
         border-radius: 3px 0 0 3px; } }
 
-.m-nav-hamburger {
-  z-index: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background: #eee;
-  border-radius: 3px;
-  font-size: 2rem;
-  vertical-align: middle;
-  border: none;
-  cursor: pointer; }
-  .m-nav-hamburger:before {
-    content: '\2261'; }
-  .m-nav-hamburger:hover, .m-nav-hamburger:active {
-    background: #ccb311;
-    transition: all 0.3s ease-out; }
-  .m-nav-hamburger:active {
-    color: #eee; }
-  @media only screen and (min-width: 940px) {
-    .m-nav-hamburger {
-      display: none; } }
-
 .m-nav {
   z-index: 1;
   display: none;
@@ -261,6 +237,26 @@ main {
   height: 100vh;
   background: #ccb311;
   opacity: 0.95; }
+  .m-nav-hamburger {
+    z-index: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #eee;
+    border-radius: 2px;
+    font-size: 2rem;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer; }
+    .m-nav-hamburger:before {
+      content: '\2261'; }
+    .m-nav-hamburger:hover, .m-nav-hamburger:active {
+      background: #ccb311;
+      transition: all 0.3s ease-out; }
+    .m-nav-hamburger:active {
+      color: #eee; }
+    @media only screen and (min-width: 940px) {
+      .m-nav-hamburger {
+        display: none; } }
   .m-nav-bar {
     display: flex;
     flex-direction: column;
@@ -281,9 +277,8 @@ main {
         color: #ca3434; }
       .m-nav-bar-item-active {
         text-decoration: underline; }
-
-.m-nav-active {
-  display: block; }
+  .m-nav-active {
+    display: block; }
 
 :root, html, body {
   width: 100vw;

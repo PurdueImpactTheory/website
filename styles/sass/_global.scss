@@ -25,6 +25,22 @@ body {
     overflow-x: hidden;
 }
 
+.main {
+    background-image: url(../../images/black_lozenge.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: $min-screen-width;
+
+    padding-top: $nav-height;
+}
+
 .link {
     color: $gold-color;
     text-decoration: none;
