@@ -169,6 +169,7 @@
         }
 
         &-text {
+            background: $light-color;
             &-left, &-right {
                 grid-row: 3 / span 1;
                 grid-column: 1 / span 3;
