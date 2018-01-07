@@ -92,10 +92,7 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 
-    font-size: 1.3rem;
-    @media #{$tablet} {
-        font-size: 1.8rem;
-    }
+    font-size: 1.4rem;
 }
 
 .blurb-para {
@@ -104,12 +101,10 @@
     margin: 0;
 
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    
     @media #{$tablet} {
-        font-size: 1.3rem;
-        line-height: 1.95rem;
         text-align: justify;
     }
 }

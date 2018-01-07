@@ -12,6 +12,12 @@
     -moz-osx-font-smoothing: grayscale;
 
     // overflow-x: hidden;
+
+    font-size: 15px;
+
+    @media only screen and (min-width: 800px) {
+        font-size: 18px;
+    }
 }
 
 html, body {
