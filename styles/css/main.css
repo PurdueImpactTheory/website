@@ -210,7 +210,7 @@ body {
       margin: 0;
       padding: 0;
       align-self: center;
-      font-size: 1.1rem;
+      font-size: 18px;
       font-weight: 500; }
       .nav-bar-item:hover, .nav-bar-item:focus {
         color: #ca3434;
