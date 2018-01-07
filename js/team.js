@@ -73,7 +73,8 @@ const exec = [
         p: "Treasurer",
         i: "images/about/mind.png",
         b: [
-            ""
+            "I am a sophomore studying Neurobiology and Genetics with minors in physics and math.  As a biology major, I have always wanted everyone to know the incredible parts of modern biology and how it has changed so much in the past century.",
+            "As my first project, I want to challenge high school biology curriculum.  In addition to being a member of the PIT, I am also full of aggressively subpar fun facts."
         ]
     },
     {
