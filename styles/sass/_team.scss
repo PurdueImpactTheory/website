@@ -1,0 +1,85 @@
+.mem {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-gap: 20px;
+
+    width: auto;
+    height: auto;
+
+    max-width: 60vw;
+
+    margin: 20px auto;
+
+    color: $dark-text-color;
+
+    &-photo {
+        max-height: 100%;
+        max-width: 100%;
+
+        &-left {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        &-right {
+            grid-row: 1 / span 1;
+            grid-column: 3 / span 1;
+        }
+
+        &-img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &-desc {
+        &-left {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+
+            text-align: right;
+        }
+        &-right {
+            grid-row: 2 / span 1;
+            grid-column: 3 / span 1;
+
+            text-align: left;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        &-name {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        &-pos {
+            color: $gold-color;
+            font-size: 0.8rem;
+        }
+    }
+
+    &-bio {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        padding: 40px 20px;
+        &-left {
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 2;
+
+            text-align: right;
+            border-right: 3px solid $dark-text-color;
+        }
+        &-right {
+            grid-row: 1 / span 2;
+            grid-column: 2 / span 2;
+
+            text-align: left;
+            border-left: 3px solid $dark-text-color;
+        }
+    }
+}

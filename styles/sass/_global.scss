@@ -45,11 +45,14 @@ body {
     width: 100vw;
 
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     min-width: $min-screen-width;
 
     padding-top: $nav-height;
+}
+
+.main-white {
+    background: white;
 }
 
 .link {
