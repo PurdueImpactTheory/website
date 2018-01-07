@@ -26,8 +26,9 @@ body {
 }
 
 .main {
-    background-image: url(../../images/black_lozenge.png);
-    background-repeat: repeat;
+    // background-image: url(../../images/black_lozenge.png);
+    // background-repeat: repeat;
+    background: $dark-color;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -52,5 +53,14 @@ body {
 
     &:active {
         font-weight: 500;
+    }
+}
+
+.page-title {
+    width: 100%;
+    color: $dark-text-color;
+
+    &-h1 {
+        font-size: 3rem;
     }
 }

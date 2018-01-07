@@ -43,12 +43,12 @@
             }
             &:active {
                 color: $accent-color; 
-                text-decoration: underline;
-                transition: all 0.2s ease-in; 
+                border-bottom: 2px solid $accent-color;
+                transition: color 0.2s ease-in; 
             }
 
             &-active {
-                text-decoration: underline;
+                border-bottom: 2px solid $dark-color;
             }
         }
     }
