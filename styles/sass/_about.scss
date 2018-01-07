@@ -121,7 +121,7 @@
         }
     
         &-dark {
-            background: $dark-color;
+            background: hsla(0, 52.9%, 42.1%, 1);
         }
     
         &-blue {
@@ -142,7 +142,7 @@
         min-width: $min-screen-width;
         min-height: 400px;
 
-        margin: 20px 0;
+        margin: 0;
 
         &-photo {
             &-left, &-right {
@@ -165,7 +165,8 @@
         }
 
         &-text {
-            background: $light-color;
+            color: $light-color;
+            background: transparent;
             &-left, &-right {
                 grid-row: 3 / span 1;
                 grid-column: 1 / span 3;
@@ -173,13 +174,13 @@
                 
                 font-size: 1rem;
                 line-height: 1.5rem;
-                padding: 20px;
+                padding: 40px 20px;
             }
         }
 
         &-bg {
             &-left, &-right {
-                grid-row: 1 / span 2;
+                grid-row: 1 / span 3;
                 grid-column: 1 / span 3;
             }
         }
