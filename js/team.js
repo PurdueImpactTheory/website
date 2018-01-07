@@ -62,7 +62,7 @@ const exec = [
     {
         n: "Andrew Santos",
         p: "President",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a sophomore majoring in physics with minor areas of business French, math, and astronomy. Being in physics, my main goal has become communicating all the nuanced but amazing parts of this discipline to my friends and peers.",
             "The first project I plan to tackle is creating a YouTube video series that can be incorporated into middle school or high school science curriculum that hints to awesome physics concepts. Also, if you love frogs almost as much as you love puns, we have a lot in common!"
@@ -71,7 +71,7 @@ const exec = [
     {
         n: "Eryn Sale",
         p: "Treasurer",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             ""
         ]
@@ -79,7 +79,7 @@ const exec = [
     {
         n: "Daniel Krolopp",
         p: "Secretary",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I'm a sophomore studying computer science with a minor in Spanish! A project I'm looking into is how to reduce the learning curve required to learn various programming languages or related techniques. Hopefully this will promote greater interest in learning how to code among younger students.",
             "I'm also a die-hard Carly Rae Jepsen fan, so expect to hear a lot of her music around me!"
@@ -88,7 +88,7 @@ const exec = [
     {
         n: "Jamie Abarashi",
         p: "Director of Outreach",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a sophomore majoring in Biological Engineering with a Cellular and Molecular Concentration along with a minor in Biotechnology and Computer Science. I've always had a passion for making a meaningful impact on my community. Before coming to Purdue, I volunteered at the Smithsonian National Museum of Natural History. Now I'm taking my teaching experience from the East Coast to the Midwest!",
             "My project idea is to help students who struggle with mental health diseases get the help they need to be successful in the classroom."
@@ -97,7 +97,7 @@ const exec = [
     {
         n: "Vritant Bhardwaj",
         p: "Liason",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a junior majoring in Computer Science and also pursuing the Entrepreneurship Certificate. I can talk all day about how amazing the things are that one can do with computers.",
             "The problems that can be solved, the people that can be helped, the possibilities are endless. With this organisation, I aim to show those possibilities to the students."
@@ -106,7 +106,7 @@ const exec = [
     {
         n: "Laura Galles",
         p: "Social Media Chair",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a freshman at Purdue University in the Exploratory Studies program. I have no idea what I plan to do the rest of my life, but I know I wish to find a profession where I can work with people on a regular basis and help them in any way that I can.",
             "In addition to being a part of Purdue Impact Theory, I am a Community Service Coordinator and Programming Director for Purdue Student Government (PSG), a member of the Purdue Honors College, Beering Scholars Student Association (BSSA), the Honors Leadership Council Social Programming Committee, and Purdue Biomakers."
@@ -118,7 +118,7 @@ const members = [
     {
         n: "August Deatherage",
         p: "Founding Member",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a sophomore majoring in Actuarial Science and Applied Statistics with a minor in Management. I hope to inform people, specifically students with in interest in mathematics and statistics, what an actuary is and what a major in Actuarial Science is like.",
             "I feel the major and career as a whole is often misunderstood and not well known; I would like to change that. Random fact about me: I think vanilla ice cream is underrated."
@@ -127,7 +127,7 @@ const members = [
     {
         n: "Kolten Peterson",
         p: "Founding Member",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "I am a Genetics major with a duel minor in chemistry and management. Genetics is a relatively new field, therefore I am hoping I can make some great new contributions to the field and change the perception of Genetics as well.",
             "My first project will be to tackle the issue of GMO’s by making a booth to set up to help educate people on what GMO’s truly are. Hopefully changing the perception of Genetics one step at a time."
@@ -136,7 +136,7 @@ const members = [
     {
         n: "Garrett Mulcahy",
         p: "Founding Member",
-        i: "/images/about/mind.png",
+        i: "images/about/mind.png",
         b: [
             "",
         ]
