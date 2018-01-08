@@ -69,11 +69,25 @@ body {
     }
 }
 
-.page-title {
-    width: 100%;
-    color: $dark-text-color;
+.page {
+    width: 70vw;
+    margin: 0 auto;
+    &-title {
+        width: 100%;
+        color: $dark-text-color;
+    
+        &-h1 {
+            font-size: 3rem;
+        }
+    }
 
-    &-h1 {
-        font-size: 3rem;
+    &-blurb {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: calc(1.2rem * 1.5);
+    }
+
+    @media #{$max-tablet} {
+        width: 90vw;
     }
 }

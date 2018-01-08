@@ -51,11 +51,21 @@ body {
   .link:active {
     font-weight: 500; }
 
-.page-title {
-  width: 100%;
-  color: #222; }
-  .page-title-h1 {
-    font-size: 3rem; }
+.page {
+  width: 70vw;
+  margin: 0 auto; }
+  .page-title {
+    width: 100%;
+    color: #222; }
+    .page-title-h1 {
+      font-size: 3rem; }
+  .page-blurb {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: calc(1.2rem * 1.5); }
+  @media only screen and (max-width: 939px) {
+    .page {
+      width: 90vw; } }
 
 .masthead {
   width: 100vw;
@@ -497,6 +507,30 @@ body {
           grid-row: 2 / span 1;
           grid-column: 1 / span 2;
           text-align: justify; } }
+
+.page-sub {
+  text-align: left;
+  background: #353535;
+  padding: 40px 20px;
+  margin: 3rem 0;
+  border-radius: 3px; }
+  .page-sub-heading {
+    color: #ccb311; }
+    .page-sub-heading-h2 {
+      margin: 0;
+      font-size: 1.6rem; }
+  .page-sub-para {
+    color: #eee;
+    font-size: 0.95rem;
+    line-height: calc(0.95rem * 1.5); }
+    .page-sub-para-p {
+      padding: 20px 3px;
+      margin: 0; }
+    .page-sub-para-list {
+      margin: 0;
+      padding: 0 40px; }
+      .page-sub-para-list-li {
+        padding: 5px 0; }
 
 :root, html, body {
   width: 100vw;
