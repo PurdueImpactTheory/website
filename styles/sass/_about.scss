@@ -68,8 +68,7 @@
     }
 
     &-text {
-        background: white;
-        opacity: 0.98; 
+        background: hsla(0, 0%, 100%, 0.8);
         padding: 0;
         margin: 0 0 10px 0;
         color: $dark-color;
@@ -97,9 +96,9 @@
         }
 
         &-p {
-           padding: 0;
-           margin: 0; 
-           height: auto;
+            padding: 0;
+            margin: 0; 
+            height: auto;
         }
     }
 

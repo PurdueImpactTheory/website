@@ -87,7 +87,7 @@ const exec = [
         ]
     },
     {
-        n: "Jamie Abarashi",
+        n: "Jamie Arabshahi",
         p: "Director of Outreach",
         i: "images/about/mind.png",
         b: [
