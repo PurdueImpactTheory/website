@@ -289,9 +289,8 @@ body {
       color: #111;
       font-size: 2rem; }
       .m-nav-bar-item:hover, .m-nav-bar-item:focus {
-        text-decoration: underline;
         color: #eee;
-        transition: all 0.2s ease-in; }
+        transition: all 0.3s ease-in; }
       .m-nav-bar-item:active {
         color: #ca3434; }
       .m-nav-bar-item-active {
