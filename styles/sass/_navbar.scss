@@ -2,6 +2,8 @@
     position: fixed;
     width: 100vw;
 
+    z-index: 8;
+
     display: grid;
     grid-template-columns: 200px auto 40px 40px;
     grid-template-rows: calc(#{$nav-height} - 10px);
@@ -38,7 +40,7 @@
             font-weight: 500;
     
             &:hover, &:focus {
-                color: $accent-color; 
+                color: white; 
                 transition: all 0.2s ease-in;      
             }
             &:active {
@@ -71,7 +73,7 @@
 }
 
 .m-nav {
-    z-index: 1;
+    z-index: 8;
     display: none;
 
     position: absolute;
