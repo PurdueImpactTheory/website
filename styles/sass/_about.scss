@@ -1,5 +1,6 @@
 .about {
     width: 90vw;
+    max-width: 1080px;
     margin: 40px auto;
 }
 
@@ -18,7 +19,21 @@
     &-text {
         grid-column: 2 / span 1;
         color: $light-color;
-    }
+
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.3rem;
+        line-height: calc(1.2rem * 1.5);
+
+        a {
+            font-size: 1.1rem;
+        }
+     }
 
     @media #{$max-tablet} {
         grid-template-columns: 1fr;

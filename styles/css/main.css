@@ -46,8 +46,7 @@ body {
   color: #ccb311;
   text-decoration: none; }
   .link:hover, .link:focus {
-    text-decoration: underline;
-    font-weight: 700; }
+    text-decoration: underline; }
   .link:active {
     font-weight: 500; }
 
@@ -300,6 +299,7 @@ body {
 
 .about {
   width: 90vw;
+  max-width: 1080px;
   margin: 40px auto; }
 
 .story {
@@ -312,7 +312,16 @@ body {
     width: 100%; }
   .story-text {
     grid-column: 2 / span 1;
-    color: #eee; }
+    color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: calc(1.2rem * 1.5); }
+    .story-text a {
+      font-size: 1.1rem; }
   @media only screen and (max-width: 939px) {
     .story {
       grid-template-columns: 1fr;
