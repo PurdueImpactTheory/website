@@ -1,0 +1,18 @@
+// variables
+@import "_var.scss";
+
+// Global CSS
+@import "_global.scss";
+
+//Pages
+@import "_landing.scss";
+@import "_navbar.scss";
+@import "_about.scss";
+@import "_team.scss";
+@import "_contact.scss";
+@import "_ourstory.scss";
+
+:root, html, body {
+    width: 100vw;
+    height: 100vh;
+}

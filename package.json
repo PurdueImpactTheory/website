@@ -2,23 +2,10 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "@phenomic/cli": "^1.0.0-alpha.13",
-    "@phenomic/core": "^1.0.0-alpha.13",
-    "@phenomic/preset-react-app": "^1.0.0-alpha.13",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router": "^3.2.0",
-    "styled-components": "^2.2.4"
+  "dependencies": {
+    "node-sass": "^4.7.2"
   },
   "scripts": {
-    "start": "phenomic start",
-    "build": "phenomic build"
-  },
-  "phenomic": {
-    "presets": [
-      "@phenomic/preset-react-app"
-    ]
+    "sass": "node-sass styles/sass/main.scss styles/css/main.css -w --source-map true"
   }
 }

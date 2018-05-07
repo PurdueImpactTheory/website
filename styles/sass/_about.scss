@@ -1,0 +1,127 @@
+.about {
+    width: 90vw;
+    max-width: 1080px;
+    margin: 40px auto;
+}
+
+.story {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: auto;
+    background: #222;
+
+    &-pic {
+        grid-column: 1 / span 1;
+        width: 100%;
+    }
+
+    &-text {
+        grid-column: 2 / span 1;
+        color: $light-color;
+
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.3rem;
+        line-height: calc(1.2rem * 1.5);
+
+        a {
+            font-size: 1.1rem;
+        }
+     }
+
+    @media #{$max-tablet} {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        &-pic {
+            grid-row: 1 / span 1;
+        }
+
+        &-text {
+            grid-column: 1 / span 1; 
+            grid-row: 2 / span 1;
+        }
+    }
+}
+
+.stuff {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 5px;
+
+    height: 300px;
+    width: 100%;
+
+    @media #{$max-tablet} {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        .projects {
+            grid-row: 1 / span 1;
+        }
+
+        .events {
+            grid-column: 1 / span 1; 
+            grid-row: 2 / span 1;
+        }
+    }
+    
+    &-el {
+        position: relative;
+        cursor: pointer;
+
+        &-img {
+            width: 100%;
+        }
+        
+        &-text {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: $light-color;
+            padding: 0;
+            padding-right: 10px; 
+            font-size: 2.8rem;
+            z-index: 2;
+        }
+
+        &-desc {
+            background: #222;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: 0.3s all ease-in;
+            color: $light-color;
+            text-align: left;
+            &-content {
+                padding: 10px;
+            }
+        }
+
+        &:hover {
+            .stuff-el-text {
+                color: $gold-color;
+            }
+        }
+    }
+}
+.projects {
+    grid-column: 1 / span 1;
+}
+
+.events {
+    grid-column: 2 / span 1;
+}   
