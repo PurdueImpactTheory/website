@@ -34,7 +34,7 @@ function reduceArray(arr) {
                     <div class="project-desc-text">
                         ${proj.desc}
                     </div>
-                </div>
+                </div> 
                 <div class="project-members">
                     <h3 class="project-members-title">contributers:</h3>
                     <ul class="project-members-list">
