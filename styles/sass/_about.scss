@@ -1,7 +1,16 @@
+html {
+    background: #eee;
+}
+
 .about {
     width: 90vw;
     max-width: 1080px;
+    height: auto;
     margin: 40px auto;
+
+    @media #{$max-tablet} {
+        width: 70%;
+    }
 }
 
 .story {
@@ -51,6 +60,7 @@
 }
 
 .stuff {
+
     margin-top: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
