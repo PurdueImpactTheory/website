@@ -1,0 +1,16 @@
+@import 'var.scss';
+
+@import '_index.scss';
+@import '_nav.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
