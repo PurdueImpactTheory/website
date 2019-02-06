@@ -235,7 +235,7 @@ body {
         border-bottom: 2px solid #111; }
   @media only screen and (min-width: 940px) {
     .nav {
-      grid-template-columns: 200px auto 450px; }
+      grid-template-columns: 200px auto 550px; }
       .nav-bar {
         display: flex;
         flex-direction: row;
