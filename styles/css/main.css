@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700");
 .mh {
   height: 100vh;
@@ -12,21 +11,22 @@
     align-items: center; }
   .mh-box {
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: space-around;
     align-items: center; }
   .mh-blurb {
-    max-width: 40vw; }
+    width: 650px; }
     .mh-blurb * {
       margin: 10px 0; }
     .mh-blurb-name {
       font-weight: 500;
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       color: #222; }
     .mh-blurb-tagline {
       font-weight: 400;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+      line-height: calc(1.5rem * 1.5);
       color: #444; }
   .mh-logo {
     border-radius: 50%;
@@ -34,62 +34,17 @@
     .mh-logo img {
       width: 25vw;
       max-width: 300px; }
-
-.intro {
-  background: white;
-  margin: 0 0 50px;
-  padding: 20vh 0; }
-  .intro-cont {
-    width: 60%;
-    margin: 0 auto; }
-  .intro p {
-    text-align: center;
-    font-size: 1.9rem;
-    line-height: calc(1.7rem * 1.7);
-    color: #333;
-    font-weight: 500; }
-  .intro hr {
-    width: 75%;
-    height: 1px;
-    background: #555; }
-
-.sitemap-container {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center; }
-
-.sitemap-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto; }
-
-.sitemap-square {
-  position: relative;
-  width: 250px;
-  height: 350px;
-  overflow: hidden;
-  width: 350px;
-  height: 350px;
-  background: #222;
-  margin: 20px; }
-  .sitemap-square:after {
-    content: “ ”;
-    background: inherit;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
-    filter: blur(10px); }
-
-.shadow {
-  -webkit-box-shadow: 0px 0px 5px 0px #555555;
-  -moz-box-shadow: 0px 0px 5px 0px #555555;
-  box-shadow: 0px 0px 5px 0px #555555; }
+  @media screen and (max-width: 720px) {
+    .mh-box {
+      flex-direction: column-reverse;
+      justify-content: center;
+      width: 85vw; }
+    .mh-blurb {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center; }
+    .mh-logo img {
+      width: 35vw; } }
 
 .nav {
   z-index: 8;
@@ -100,6 +55,7 @@
   padding-right: 8vw;
   width: calc(100vw - 8vw); }
   .nav-item {
+    cursor: pointer;
     margin: 0 15px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -109,6 +65,11 @@
       justify-content: flex-end;
       align-items: center;
       height: 100%; }
+    .nav-item:hover {
+      color: #b18201;
+      transition: all 0.3s ease-in; }
+    .nav-item-active {
+      color: #b18201; }
 
 body, html {
   padding: 0;
@@ -117,5 +78,8 @@ body, html {
 :root {
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px; }
+  @media screen and (max-width: 720px) {
+    :root {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
