@@ -1,10 +1,9 @@
 .masthead {
     width: 100vw;
+    height: calc(100vh - #{$nav-height});
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 5vh auto 10vh;
 
     &-body {
         display: grid;
@@ -17,7 +16,6 @@
     }
 
     @media #{$tablet} {
-        margin: 10vh auto 10vh;
 
         &-body {
             grid-template-columns: auto 300px 600px auto;
@@ -105,7 +103,7 @@
     line-height: 1.95rem;
     
     @media #{$tablet} {
-        text-align: justify;
+        text-align: left;
     }
 }
 
