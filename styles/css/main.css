@@ -413,6 +413,26 @@ body {
         grid-row: 1 / span 3;
         grid-column: 1 / span 3; } }
 
+.mem-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: calc(3*250px + 30px);
+  margin: 0 auto; }
+
+.mem-pic {
+  padding: 5px;
+  width: 250px; }
+  .mem-pic img {
+    width: calc(100% - 5px); }
+
+@media only screen and (max-width: 939px) {
+  .mem-container {
+    width: calc(90vw); }
+  .mem-pic {
+    width: 150px; } }
+
 .mem-wrapper {
   display: inline-block;
   width: 70vw;
